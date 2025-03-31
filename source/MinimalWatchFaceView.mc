@@ -67,8 +67,8 @@ class MinimalWatchFaceView extends WatchUi.WatchFace {
       }
     }
 
-    var tempView = View.findDrawableById("TemperatureLabel") as Text;
-    tempView.setText(temperature + " " + unit);
+    var temperatureView = View.findDrawableById("TemperatureLabel") as Text;
+    temperatureView.setText(temperature + " " + unit);
   }
 
   private function updateBattery() as Void {
